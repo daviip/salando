@@ -33,5 +33,4 @@
 
 .square > div > *:nth-child(2) > * {
   color: rgb(161, 78, 255);
-  text-decoration: none;
 }

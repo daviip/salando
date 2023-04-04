@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { useEffect, useState } from "react";
 import styles from "../styles/page.module.css";
+import Link from "next/link";
 
 type TheBestsProps = {
   type: "electronics" | "jewelery" | "men's clothing" | "women's clothing";
@@ -37,7 +38,9 @@ export const TheBests = (props: TheBestsProps) => {
 
   return (
     <div className={styles.thebests}>
-      <h1 className={styles.thebests_title}>{returnTitle()}</h1>
+      <h1 className={styles.thebests_title}>
+        <Link href={`/categoria/${props.type}`}>{returnTitle()}</Link>
+      </h1>
       <div className={styles.thebests_movies}>
         {isLoading
           ? "Cargando..."

@@ -30,9 +30,12 @@
 }
 
 .thebests_title {
-  color: rgb(161, 78, 255);
   text-shadow: 2px 2px rgb(126, 253, 255, 1.5);
   padding-bottom: 8px;
+}
+
+.thebests_title > a {
+  color: rgb(161, 78, 255);
 }
 
 .thebests_movies {
