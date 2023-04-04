@@ -19,8 +19,12 @@ header {
   align-items: center;
   padding-left: 1rem;
   font-weight: 700;
-  color: rgb(0, 0, 0);
   font-size: 2rem;
+}
+
+header > * {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 
 #nav_bottom {

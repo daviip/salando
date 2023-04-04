@@ -1,5 +1,9 @@
-/* import styles from "../styles/page.module.css";
- */
+import Link from "next/link";
+
 export const Header = () => {
-  return <header>Zalando</header>;
+  return (
+    <header>
+      <Link href="/">Zalando</Link>
+    </header>
+  );
 };
